@@ -45,18 +45,14 @@ namespace Basic_Calculator
             this.Multiplication_btn = new System.Windows.Forms.Button();
             this.Divide_btn = new System.Windows.Forms.Button();
             this.num0 = new System.Windows.Forms.Button();
-            this.Screen_2 = new System.Windows.Forms.TextBox();
             this.Screen_ = new System.Windows.Forms.TextBox();
-            this.Screen_Answer = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Clear_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // num1
             // 
             this.num1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num1.Location = new System.Drawing.Point(12, 200);
+            this.num1.Location = new System.Drawing.Point(12, 179);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(45, 45);
             this.num1.TabIndex = 1;
@@ -67,7 +63,7 @@ namespace Basic_Calculator
             // num2
             // 
             this.num2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num2.Location = new System.Drawing.Point(63, 200);
+            this.num2.Location = new System.Drawing.Point(63, 179);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(45, 45);
             this.num2.TabIndex = 2;
@@ -78,7 +74,7 @@ namespace Basic_Calculator
             // num3
             // 
             this.num3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num3.Location = new System.Drawing.Point(114, 200);
+            this.num3.Location = new System.Drawing.Point(114, 179);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(45, 45);
             this.num3.TabIndex = 3;
@@ -89,7 +85,7 @@ namespace Basic_Calculator
             // num6
             // 
             this.num6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num6.Location = new System.Drawing.Point(114, 149);
+            this.num6.Location = new System.Drawing.Point(114, 128);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(45, 45);
             this.num6.TabIndex = 6;
@@ -100,7 +96,7 @@ namespace Basic_Calculator
             // num5
             // 
             this.num5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num5.Location = new System.Drawing.Point(63, 149);
+            this.num5.Location = new System.Drawing.Point(63, 128);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(45, 45);
             this.num5.TabIndex = 5;
@@ -111,7 +107,7 @@ namespace Basic_Calculator
             // num4
             // 
             this.num4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num4.Location = new System.Drawing.Point(12, 149);
+            this.num4.Location = new System.Drawing.Point(12, 128);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(45, 45);
             this.num4.TabIndex = 4;
@@ -122,7 +118,7 @@ namespace Basic_Calculator
             // num9
             // 
             this.num9.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num9.Location = new System.Drawing.Point(114, 98);
+            this.num9.Location = new System.Drawing.Point(114, 77);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(45, 45);
             this.num9.TabIndex = 9;
@@ -133,7 +129,7 @@ namespace Basic_Calculator
             // num8
             // 
             this.num8.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num8.Location = new System.Drawing.Point(63, 98);
+            this.num8.Location = new System.Drawing.Point(63, 77);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(45, 45);
             this.num8.TabIndex = 8;
@@ -144,7 +140,7 @@ namespace Basic_Calculator
             // num7
             // 
             this.num7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num7.Location = new System.Drawing.Point(12, 98);
+            this.num7.Location = new System.Drawing.Point(12, 77);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(45, 45);
             this.num7.TabIndex = 7;
@@ -155,7 +151,7 @@ namespace Basic_Calculator
             // Sum_btn
             // 
             this.Sum_btn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Sum_btn.Location = new System.Drawing.Point(165, 98);
+            this.Sum_btn.Location = new System.Drawing.Point(165, 77);
             this.Sum_btn.Name = "Sum_btn";
             this.Sum_btn.Size = new System.Drawing.Size(45, 45);
             this.Sum_btn.TabIndex = 12;
@@ -166,7 +162,7 @@ namespace Basic_Calculator
             // equal_btn
             // 
             this.equal_btn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.equal_btn.Location = new System.Drawing.Point(114, 251);
+            this.equal_btn.Location = new System.Drawing.Point(114, 230);
             this.equal_btn.Name = "equal_btn";
             this.equal_btn.Size = new System.Drawing.Size(45, 45);
             this.equal_btn.TabIndex = 11;
@@ -177,17 +173,18 @@ namespace Basic_Calculator
             // Decimal_btn
             // 
             this.Decimal_btn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Decimal_btn.Location = new System.Drawing.Point(63, 251);
+            this.Decimal_btn.Location = new System.Drawing.Point(63, 230);
             this.Decimal_btn.Name = "Decimal_btn";
             this.Decimal_btn.Size = new System.Drawing.Size(45, 45);
             this.Decimal_btn.TabIndex = 10;
             this.Decimal_btn.Text = ".";
             this.Decimal_btn.UseVisualStyleBackColor = true;
+            this.Decimal_btn.Click += new System.EventHandler(this.Decimal_btn_Click);
             // 
             // Subtract_btn
             // 
             this.Subtract_btn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Subtract_btn.Location = new System.Drawing.Point(165, 149);
+            this.Subtract_btn.Location = new System.Drawing.Point(165, 128);
             this.Subtract_btn.Name = "Subtract_btn";
             this.Subtract_btn.Size = new System.Drawing.Size(45, 45);
             this.Subtract_btn.TabIndex = 13;
@@ -198,7 +195,7 @@ namespace Basic_Calculator
             // Multiplication_btn
             // 
             this.Multiplication_btn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Multiplication_btn.Location = new System.Drawing.Point(165, 200);
+            this.Multiplication_btn.Location = new System.Drawing.Point(165, 179);
             this.Multiplication_btn.Name = "Multiplication_btn";
             this.Multiplication_btn.Size = new System.Drawing.Size(45, 45);
             this.Multiplication_btn.TabIndex = 14;
@@ -209,7 +206,7 @@ namespace Basic_Calculator
             // Divide_btn
             // 
             this.Divide_btn.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Divide_btn.Location = new System.Drawing.Point(165, 251);
+            this.Divide_btn.Location = new System.Drawing.Point(165, 230);
             this.Divide_btn.Name = "Divide_btn";
             this.Divide_btn.Size = new System.Drawing.Size(45, 45);
             this.Divide_btn.TabIndex = 15;
@@ -220,7 +217,7 @@ namespace Basic_Calculator
             // num0
             // 
             this.num0.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.num0.Location = new System.Drawing.Point(12, 250);
+            this.num0.Location = new System.Drawing.Point(12, 230);
             this.num0.Name = "num0";
             this.num0.Size = new System.Drawing.Size(45, 45);
             this.num0.TabIndex = 17;
@@ -228,69 +225,32 @@ namespace Basic_Calculator
             this.num0.UseVisualStyleBackColor = true;
             this.num0.Click += new System.EventHandler(this.num0_Click);
             // 
-            // Screen_2
-            // 
-            this.Screen_2.Location = new System.Drawing.Point(92, 43);
-            this.Screen_2.Name = "Screen_2";
-            this.Screen_2.Size = new System.Drawing.Size(118, 23);
-            this.Screen_2.TabIndex = 19;
-            // 
             // Screen_
             // 
-            this.Screen_.Location = new System.Drawing.Point(92, 14);
+            this.Screen_.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Screen_.Location = new System.Drawing.Point(12, 28);
             this.Screen_.Name = "Screen_";
-            this.Screen_.Size = new System.Drawing.Size(118, 23);
+            this.Screen_.Size = new System.Drawing.Size(198, 33);
             this.Screen_.TabIndex = 20;
             // 
-            // Screen_Answer
+            // Clear_btn
             // 
-            this.Screen_Answer.BackColor = System.Drawing.SystemColors.Control;
-            this.Screen_Answer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Screen_Answer.Location = new System.Drawing.Point(92, 72);
-            this.Screen_Answer.Name = "Screen_Answer";
-            this.Screen_Answer.Size = new System.Drawing.Size(118, 23);
-            this.Screen_Answer.TabIndex = 21;
-            this.Screen_Answer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 15);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "1st Number";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 15);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "2nd Number";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 15);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Answer";
+            this.Clear_btn.Location = new System.Drawing.Point(63, 281);
+            this.Clear_btn.Name = "Clear_btn";
+            this.Clear_btn.Size = new System.Drawing.Size(96, 45);
+            this.Clear_btn.TabIndex = 21;
+            this.Clear_btn.Text = "C";
+            this.Clear_btn.UseVisualStyleBackColor = true;
+            this.Clear_btn.Click += new System.EventHandler(this.Clear_btn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(234, 305);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Screen_Answer);
+            this.ClientSize = new System.Drawing.Size(234, 330);
+            this.Controls.Add(this.Clear_btn);
             this.Controls.Add(this.Screen_);
-            this.Controls.Add(this.Screen_2);
             this.Controls.Add(this.num0);
             this.Controls.Add(this.Divide_btn);
             this.Controls.Add(this.Multiplication_btn);
@@ -333,12 +293,8 @@ namespace Basic_Calculator
         private System.Windows.Forms.Button Multiplication_btn;
         private System.Windows.Forms.Button Divide_btn;
         private System.Windows.Forms.Button num0;
-        private System.Windows.Forms.TextBox Screen_2;
         private System.Windows.Forms.TextBox Screen_;
-        private System.Windows.Forms.Label Screen_Answer;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Clear_btn;
     }
 }
 
