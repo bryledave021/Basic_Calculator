@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Basic_Calculator
+namespace OOP_Basic_Calculator
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace Basic_Calculator
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MyCalculator());
         }
     }
 }
